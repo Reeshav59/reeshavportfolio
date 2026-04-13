@@ -1,0 +1,228 @@
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+
+
+            font-family: "Poppins", sans-serif;
+
+            height: 10vh;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(18, 18, 62);
+
+            border-bottom :2px solid white;
+
+
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(213, 213, 229);
+            font-size: 1.03rem;
+
+        }
+
+        .left {
+            font-size: 40px;
+
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 23px;
+            margin-bottom: 7%;
+
+
+        }
+
+        .leftsection {
+            font-size: 3rem;
+            width: 600px;
+            margin-top: 100px;
+
+
+
+        }
+
+        .rightsection img {
+            width: 100%;
+            margin-top: 50px;
+
+        }
+
+        .name {
+            color: blueviolet;
+        }
+
+        .headimg {
+            width: 60px;
+            margin-top: 2%;
+
+
+        }
+
+        #element {
+            color: blueviolet;
+
+        }
+
+        .secondsection {
+            max-width: 80vh;
+            height: 25vh;
+
+            margin-left: 9%;
+
+        }
+
+        main hr {
+
+            background: rgb(155, 86, 219);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .grey {
+            color: gray;
+            font-size: small;
+        }
+
+        .secondsection .box {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        /* stack text + skills vertically */
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* align skill icons in one row */
+        .myskills {
+            display: flex;
+            gap: 70px;
+            margin-top: 10px;
+        }
+
+        .myskills img {
+            width: 150px;
+            /* adjust size */
+
+        }
+
+        .skills {
+            width: 300px;
+        }
+
+        .about {
+            max-width: 100%;
+            
+            
+            /* center + spacing */
+            text-align: left;
+            padding:120px;
+            
+
+        }
+
+        .about h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1.5rem;
+            color: rgb(118, 66, 167);
+            line-height: 1.6;
+
+        }
+        .footerdiv{
+            margin-bottom:80px;
+        }
+        .last{
+            display:flex;
+            justify-content: space space-around;
+
+        }
+   .contactme {
+        border-top :2px solid white;;
+
+    background-color: rgb(18, 18, 62); /* change color */
+    width: 175vh
+    height: 150px; /* increase height */
+    padding: 100px;
+
+
+}
+.contac{
+    
+
+    display:flex;
+    justify-content: space-around;
+   
+}
+.contac ul li{
+    list-style:symbols();
+    font-size:30px;
+    
+}
+.contac ul li a {
+    text-decoration:none;
+    color:white;
+
+}
+.contac ul li a:hover{
+    color:blueviolet;
+}
+.bold{
+    font-weight: bold;
+    color:blueviolet;
+}
+.bold2{
+    font-weight: bold;
+    color:blueviolet;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.rights{
+    color:white;
+    text-align:center;
+    margin-top:90px;
+}
