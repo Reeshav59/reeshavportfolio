@@ -6,13 +6,12 @@
 
 
         body {
-            background-color: rgb(0, 0, 33);
-            color: white;
+            
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;   /* changed from height: 10vh */
 
-
-            font-family: "Poppins", sans-serif;
-
-            height: 10vh;
 
         }
 
@@ -100,10 +99,10 @@
         }
 
         .secondsection {
-            max-width: 80vh;
-            height: 25vh;
-
-            margin-left: 9%;
+           
+    max-width: 80%;     
+    height: 25vh;
+    margin-left: 9%;
 
         }
 
@@ -179,13 +178,13 @@
 
         }
    .contactme {
-        border-top :2px solid white;;
-
-    background-color: rgb(18, 18, 62); /* change color */
-    width: 175vh;
-    height: 150px; /* increase height */
+    border-top: 2px solid white;
+    background-color: rgb(18, 18, 62);
+    width: 100%;              /* changed from 175vh */
+    box-sizing: border-box;   /* add this so padding doesn't overflow */
+    height: 150px;
     padding: 100px;
-
+}
 
 }
 .contac{
