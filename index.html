@@ -4,191 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible " content="IE=edge">
-    <meta name="viewport" content="width=device-width,inital-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png" href="portimg.png">
     <title>Reeshav-portfolio</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-
-        body {
-            background-color: rgb(0, 0, 33);
-            color: white;
-
-
-            font-family: "Poppins", sans-serif;
-
-            height: 10vh;
-
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100px;
-            background-color: rgb(18, 18, 62);
-
-
-
-
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-
-        }
-
-        nav ul li a {
-            text-decoration: none;
-
-            color: white;
-        }
-
-        nav ul li a:hover {
-            color: rgb(213, 213, 229);
-            font-size: 1.03rem;
-
-        }
-
-        .left {
-            font-size: 40px;
-
-        }
-
-        .firstsection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 23px;
-            margin-bottom: 7%;
-
-
-        }
-
-        .leftsection {
-            font-size: 3rem;
-            width: 600px;
-            margin-top: 100px;
-
-
-
-        }
-
-        .rightsection img {
-            width: 100%;
-            margin-top: 50px;
-
-        }
-
-        .name {
-            color: blueviolet;
-        }
-
-        .headimg {
-            width: 60px;
-            margin-top: 2%;
-
-
-        }
-
-        #element {
-            color: blueviolet;
-
-        }
-
-        .secondsection {
-            max-width: 80wh;
-            height: 25vh;
-
-            margin-left: 9%;
-
-        }
-
-        main hr {
-
-            background: rgb(155, 86, 219);
-            height: 1.2px;
-            margin: 60px 84px;
-        }
-
-        .grey {
-            color: gray;
-            font-size: small;
-        }
-
-        .secondsection .box {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-        }
-
-        /* stack text + skills vertically */
-        .content {
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* align skill icons in one row */
-        .myskills {
-            display: flex;
-            gap: 70px;
-            margin-top: 10px;
-        }
-
-        .myskills img {
-            width: 100px;
-            /* adjust size */
-
-        }
-
-        .skills {
-            width: 300px;
-        }
-
-        .about {
-            max-width: 100%;
-            
-            
-            /* center + spacing */
-            text-align: left;
-            padding:120px;
-            
-
-        }
-
-        .about h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .about p {
-            font-size: 1.5rem;
-            color: rgb(118, 66, 167);
-            line-height: 1.6;
-
-        }
-        .footerdiv{
-            margin-bottom:80px;
-        }
-        .last{
-            dipslay:flex;
-            justify-content: space space-around;
-
-        }
-    </style>
+    
+   
 </head>
 
 <body>
@@ -201,11 +25,10 @@
 
             <div class="right">
                 <ul class="list">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me </a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#Contact">Contact Me </a></li>
 
 
                 </ul>
@@ -215,7 +38,7 @@
         </nav>
     </header>
     <main>
-        <section class="firstsection">
+        <section id="home" class="firstsection">
             <div class="leftsection">
                 Hi, My name is <span class="name"> Reeshav !</span>
                 <div class="wb">and I am a passionate</div>
@@ -226,7 +49,7 @@
             </div>
         </section>
         <hr>
-        <section class="secondsection">
+        <section id = "skills" class="secondsection">
             <div class="box">
                 <img src="skills.png" alt="" class="skills">
 
@@ -247,10 +70,8 @@
 
         </section>
         <hr>
-    </main>
-    <footer>
         
-        <section class="about">
+        <section id = "about" class="about">
             <h1>About Me</h1>
             <p>
                Hi, I'm Reeshav Bhardwaj — an 18-year-old Computer Science student at Ramniranjan Jhunjhunwala College, Mumbai, on a mission to become a Software Engineer.
@@ -262,20 +83,29 @@ With a foundation in HTML, CSS, JavaScript, Python, and C++, I'm passionate abou
 Currently open to internship opportunities and collaborations. Let's build something great together.
             </p>
         </section>
-        <section>
-            <div class="endfist">
-                <h3>Reeshav's </h3>
-            </div>
-            <div class="end second">
+    </main>
+    <footer>
+        <section id="Contact" class="contactme">
+            <div class="contac">
+                <h1 >Contact Me</h1>
                 <ul>
-                    <li>home </li>
-                    <li>Contact</li>
-
+                    <li><span class = "bold">Gmail Id</span> : reeshavbhardwaj59@gmail.com</li>
+                    <li><span class ="bold2">Phone number</span> :7045464337</li>
                 </ul>
-            </div>
-        </section>
-        
+                <ul>
+                    <li><a href = "https://www.instagram.com/bhardwaj_rohit_09/" target = "_blank" >Instagram</a></li>
+                    <li><a href = "https://www.linkedin.com/in/rohit-bhardwaj-0144531b6/" target = "_blank" >linkedin</a></li>
+                    <li><a href = "https://github.com/Reeshav59?tab=repositories" target ="_blank" >Github</a></li>
+                </ul>
 
+
+            </div>
+            <div class="rights">
+                www.reeshav.dev|All rights reserved 
+            </div>
+
+            
+        </section>
     </footer>
 
 
