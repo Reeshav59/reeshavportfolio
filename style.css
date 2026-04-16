@@ -1,227 +1,394 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 
-        * {
-            padding: 0;
-            margin: 0;
-        }
 
-
-        body {
-            
+body {
     background-color: rgb(0, 0, 33);
     color: white;
+
+
     font-family: "Poppins", sans-serif;
-    min-height: 100vh;   /* changed from height: 10vh */
 
+    height: 10vh;
 
-        }
+}
 
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100px;
-            background-color: rgb(18, 18, 62);
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(18, 18, 62);
 
-            border-bottom :2px solid white;
-
-
-
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-
-        }
-
-        nav ul li a {
-            text-decoration: none;
-
-            color: white;
-        }
-
-        nav ul li a:hover {
-            color: rgb(213, 213, 229);
-            font-size: 1.03rem;
-
-        }
-
-        .left {
-            font-size: 40px;
-
-        }
-
-        .firstsection {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 23px;
-            margin-bottom: 7%;
-
-
-        }
-
-        .leftsection {
-            font-size: 3rem;
-            width: 600px;
-            margin-top: 100px;
+    border-bottom: 2px solid white;
 
 
 
-        }
 
-        .rightsection img {
-            width: 100%;
-            margin-top: 50px;
+}
 
-        }
+nav ul {
+    display: flex;
+    justify-content: center;
 
-        .name {
-            color: blueviolet;
-        }
+}
 
-        .headimg {
-            width: 60px;
-            margin-top: 2%;
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: blueviolet;
+    transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: blueviolet;
+    transition: width 0.3s ease;
+}
 
 
-        }
 
-        #element {
-            color: blueviolet;
+nav ul li a:hover {
+    color: white;
+    font-weight: solid;
+}
 
-        }
+nav ul li a:hover::after {
+    width:100%
+}
 
-        .secondsection {
-           
-    max-width: 80%;     
+.left {
+    font-size: 40px;
+
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 23px;
+    margin-bottom: 7%;
+
+
+}
+
+.leftsection {
+    font-size: 3rem;
+    width: 600px;
+    margin-top: 100px;
+
+
+
+}
+
+.rightsection img {
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+.name {
+    color: blueviolet;
+}
+
+.headimg {
+    width: 60px;
+    margin-top: 2%;
+
+
+}
+
+#element {
+    color: blueviolet;
+
+}
+
+.secondsection {
+    max-width: 80vh;
     height: 25vh;
+
     margin-left: 9%;
 
-        }
+}
 
-        main hr {
+main hr {
 
-            background: rgb(155, 86, 219);
-            height: 1.2px;
-            margin: 60px 84px;
-        }
+    background: rgb(155, 86, 219);
+    height: 1.2px;
+    margin: 60px 84px;
+}
 
-        .grey {
-            color: gray;
-            font-size: small;
-        }
+.grey {
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+}
 
-        .secondsection .box {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-        }
+.secondsection .box {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
 
-        /* stack text + skills vertically */
-        .content {
-            display: flex;
-            flex-direction: column;
-        }
 
-        /* align skill icons in one row */
-        .myskills {
-            display: flex;
-            gap: 70px;
-            margin-top: 10px;
-        }
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.content h1{
+    transition: transform 0.3s ease;
+}
 
-        .myskills img {
-            width: 150px;
-            /* adjust size */
+.content h1:hover{
+    transform: translateY(-5px);
+}
 
-        }
+.myskills {
+    display: flex;
+    gap: 70px;
+    margin-top: 10px;
+}
 
-        .skills {
-            width: 300px;
-        }
+.myskills img {
+    width: 150px;
+    transition:transform 0.3s ease;
 
-        .about {
-            max-width: 100%;
-            
-            
-            /* center + spacing */
-            text-align: left;
-            padding:120px;
-            
+    
 
-        }
+}
+.myskills img:hover{
+    transform:translateY(8px);
+}
 
-        .about h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
+.skills {
+    width: 300px;
+}
 
-        .about p {
-            font-size: 1.5rem;
-            color: rgb(118, 66, 167);
-            line-height: 1.6;
+.about {
+    max-width: 100%;
 
-        }
-        .footerdiv{
-            margin-bottom:80px;
-        }
-        .last{
-            display:flex;
-            justify-content: space space-around;
 
-        }
-   .contactme {
+    
+    text-align: left;
+    padding: 120px;
+
+
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+
+
+}
+.about h1:hover{
+
+    transform:translatey(-5px);
+}
+
+.about p {
+    font-size: 1.5rem;
+    color: rgb(118, 66, 167);
+    line-height: 1.6;
+
+}
+
+.footerdiv {
+    margin-bottom: 80px;
+}
+
+.last {
+    display: flex;
+    justify-content: space space-around;
+
+}
+
+.contactme {
     border-top: 2px solid white;
+    ;
+
     background-color: rgb(18, 18, 62);
-    width: 100%;              /* changed from 175vh */
-    box-sizing: border-box;   /* add this so padding doesn't overflow */
-    height: 150px;
+    /* change color */
+    width: 89.2vw;
+    height: 100px;
+    /* increase height */
     padding: 100px;
-}
+
 
 }
-.contac{
-    
 
-    display:flex;
+.contac {
+
+
+    display: flex;
     justify-content: space-around;
-   
+
 }
-.contac ul li{
-    list-style:symbols();
-    font-size:30px;
+.contac h1{
     
+   
+    transition:transform 0.3s ease;
+
 }
+.contac h1:hover{
+    transform:translateY(-5px)
+
+
+}
+
+.contac ul li {
+    list-style: symbols();
+    font-size: 30px;
+    list-style: none;
+    ;
+
+}
+
 .contac ul li a {
-    text-decoration:none;
-    color:white;
+    text-decoration: none;
+    color: white;
 
 }
-.contac ul li a:hover{
-    color:blueviolet;
+
+.contac ul li a:hover {
+    color: blueviolet;
 }
-.bold{
+
+.bold {
     font-weight: bold;
-    color:blueviolet;
+    color: blueviolet;
 }
-.bold2{
+
+.bold2 {
     font-weight: bold;
-    color:blueviolet;
+    color: blueviolet;
 
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
-.rights{
-    color:white;
-    text-align:center;
-    margin-top:90px;
+
+.rights {
+    color: white;
+    text-align: center;
+
 }
+
+.instapng {
+    width: 40px;
+    background-color: blueviolet;
+    border-radius: 20px;
+    transition:transform 0.3s ease;
+}
+
+.linkedin {
+    width: 40px;
+    background-color: blueviolet;
+    border-radius: 20px;
+        transition:transform 0.3s ease;
+
+}
+
+.github {
+    width: 40px;
+    background-color: blueviolet;
+    border-radius: 20px;
+        transition:transform 0.3s ease;
+
+
+}
+.instapng:hover{
+    transform: scale(1.2);
+}
+.linkedin:hover{
+        transform: scale(1.2);
+}
+.github:hover{
+        transform: scale(1.2);
+
+}
+
+
+.projects {
+    padding: 80px;
+   
+    margin-bottom:50px;
+    
+}
+
+.project-title {
+   margin-left:25px;
+    font-size: 2.5rem;
+    
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+
+
+    
+}
+.project-title:hover{
+    transform:translateY(-5px);
+}
+
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+   
+    
+}
+
+.completed, .ongoing {
+    width: 50%;
+
+}
+
+
+.completed h2 {
+    color: lightgreen;
+    text-align: center;
+}
+
+.ongoing h2 {
+
+    color: orange;
+    text-align:center;
+}
+.project-card a {
+    color:blueviolet;
+    text-decoration: none;
+}
+
+
+.project-card {
+    background: rgb(18, 18, 62);
+    padding:20px;
+    margin:20px;
+    border-radius:20px;
+    transition: transform 0.3s ease;
+}
+
+#completed1:hover, #completed2:hover {
+    transform: translateX(-5px);
+}
+#ongoing1:hover, #ongoing2:hover{
+    transform:translatex(-5px);
+}
+
+
