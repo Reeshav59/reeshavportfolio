@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible " content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Reeshav Bhardwaj, showcasing skills, projects, and contact information.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="png" href="portimg.png">
+    <link rel="icon" type="image/png" href="portimg.png">
     <title>Reeshav-portfolio</title>
 
 
@@ -19,7 +20,7 @@
     <header>
         <nav>
             <div class="left">
-                <img class="headimg" src="developer.png">
+                <img class="headimg" src="developer.png" alt="Developer icon">
                 Reeshav's portfolio
             </div>
 
@@ -29,7 +30,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#Contact">Contact Me </a></li>
+                    <li><a href="#contact">Contact Me </a></li>
 
 
                 </ul>
@@ -46,25 +47,25 @@
                 <span id="element"></span>
             </div>
             <div class="rightsection">
-                <img class="png" src="programer.png">
+                <img class="png" src="programer.png" alt="Programmer illustration" loading="lazy">
             </div>
         </section>
         <hr>
         <section id="skills" class="secondsection">
             <div class="box">
-                <img src="skills.png" alt="" class="skills">
+                <img src="skills.png" alt="Skills illustration" class="skills" loading="lazy">
 
                 <div class="content">
-                    <span class="grey">What I have learn so far</span>
+                    <span class="grey">What I have learned so far</span>
                     <h1>Skills</h1>
 
                     <div class="myskills">
-                        <img src="html.png" alt="">
-                        <img src="css.png" alt="">
-                        <img src="js.png" alt="">
-                        <img src="c++.png">
-                        <img src="python.png" alt="">
-                        <img src="sql.png" alt="">
+                        <img src="html.png" alt="HTML logo" loading="lazy">
+                        <img src="css.png" alt="CSS logo" loading="lazy">
+                        <img src="js.png" alt="JavaScript logo" loading="lazy">
+                        <img src="c++.png" alt="C++ logo" loading="lazy">
+                        <img src="python.png" alt="Python logo" loading="lazy">
+                        <img src="sql.png" alt="SQL logo" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -101,13 +102,13 @@
                     <div class="project-card" id="completed1">
                         <h3>Portfolio Website</h3>
                         <p>A personal portfolio built using HTML, CSS, and JavaScript.</p>
-                        <a href="#" target="_blank" class = "plink">View Project</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="plink">View Project</a>
                     </div>
 
-                    <div class="project-card" id = "completed2">
+                    <div class="project-card" id="completed2">
                         <h3>Lucky number</h3>
-                        <P>It's i a very simple game in which two player generate random number which ever is the greatest win the game </P>
-                        <a href="#" target="_blank" class="plink">View Project</a>
+                        <p>It's a simple game in which two players generate random numbers, and whoever gets the greater number wins the game.</p>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="plink">View Project</a>
                     </div>
                 </div>
 
@@ -132,7 +133,7 @@
     </main>
 
     <footer>
-        <section id="Contact" class="contactme">
+        <section id="contact" class="contactme">
             <div class="contac">
                 <h1>Contact Me</h1>
                 <ul>
@@ -140,12 +141,12 @@
                     <li><span class="bold2">Phone number</span> :7045464337</li>
                 </ul>
                 <ul>
-                    <li><a href="https://www.instagram.com/bhardwaj_rohit_09/" target="_blank"><img src="instagram.png"
-                                class="instapng"></a></li>
-                    <li><a href="https://www.linkedin.com/in/rohit-bhardwaj-0144531b6/" target="_blank"><img
-                                src="linkedin.png" class="linkedin"></a></li>
-                    <li><a href="https://github.com/Reeshav59?tab=repositories" target="_blank"><img src="github.png"
-                                class="github"></a></li>
+                    <li><a href="https://www.instagram.com/bhardwaj_rohit_09/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="instagram.png"
+                                class="instapng" alt="Instagram"></a></li>
+                    <li><a href="https://www.linkedin.com/in/rohit-bhardwaj-0144531b6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img
+                                src="linkedin.png" class="linkedin" alt="LinkedIn"></a></li>
+                    <li><a href="https://github.com/Reeshav59?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="github.png"
+                                class="github" alt="GitHub"></a></li>
                 </ul>
 
 
@@ -159,10 +160,10 @@
     </footer>
 
 
-    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script defer src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Web Desginer', 'Content Creator'],
+            strings: ['Web Developer', 'Web Designer', 'Content Creator'],
             typeSpeed: 100,
         });
     </script>
